@@ -91,7 +91,7 @@ blockquote{
     opacity: 0.7;
     color: azure;
 }
-.prin{
+.autor{
 	display: flex;
 	justify-content: flex-end;
 }
@@ -109,7 +109,9 @@ blockquote{
 	justify-content: space-around;
 	flex-flow: column wrap;
 	color: black;
+	position: static;
 }
+
 .card1{
 	width: 30%;
 	height: 50%;
