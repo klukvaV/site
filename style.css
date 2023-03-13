@@ -1,0 +1,193 @@
+body{
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	background: url(img/background_practiceSite.jpg) center center fixed repeat-y black;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	position: absolute;
+}
+header{
+	display: flex;
+    justify-content: center;
+	width: 100%;
+    margin: 0;
+	padding: 0;
+	position: absolute;
+}
+nav{
+	display: flex;
+	justify-content: space-between;
+	width: 70%;
+	height: 70px;
+	background-color: black;
+}
+.menu-list{
+	display: flex;
+	justify-content: center;
+}
+.icon{
+	display: flex;
+	justify-content: flex-start;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+.menu-item a{
+	font-size: 30px;
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	text-decoration: none;
+	color: azure;
+	transition: all 0.8s ease 0s;
+}
+a:hover{
+	color: #81FFB3;
+}
+.menu-item{
+    margin-right: 82px;
+}
+
+main{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: azure;
+	max-width: 100%;
+	max-height: 100%;
+	width: 70%;
+	
+}
+p{
+	display: flex;
+	justify-content: flex-start;
+}
+.main-text{
+    max-height: 100%;
+    max-width: 45%;
+    font-weight: 500;
+    font-size: 53px;
+    line-height: 40px;
+    color: azure;
+	align-items: center;
+	display: flex;
+}
+blockquote{
+	display: flex;
+	flex-direction: column;
+    font-weight: 400;
+    max-width: 516px;
+    max-height: 67px;
+    font-size: 18px;
+    line-height: 20px;
+    margin-left: 0;
+    opacity: 0.7;
+    color: azure;
+}
+.prin{
+	display: flex;
+	justify-content: flex-end;
+}
+
+
+
+
+
+
+
+
+.blog{
+	background-color: #D5FAD4;
+	display: flex;
+	justify-content: space-around;
+	flex-flow: column wrap;
+	color: black;
+}
+.card1{
+	width: 30%;
+	height: 50%;
+	position: relative;
+	border: 3px solid #811A3F;
+}
+.product1,
+.description1 {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	text-align: center;
+	background-color: azure;
+	backface-visibility: hidden;
+	transition: 1s;
+}
+.description1{
+	box-sizing: border-box;
+	padding: 40px;
+	transform: rotateY(180deg); /* поворот блока с описанием на 180 град, прячем его в начальном состоянии, без наведения курсора мыши */
+}
+.card1:hover .product1 {
+transform: rotateY(180deg); /* разворачиваем блок с изображением на 180 градусов */
+}
+.card1:hover .description1 {
+transform: rotateY(360deg); /* возвращаем блок*/
+}
+.card2{
+	width: 30%;
+	height: 50%;
+	position: relative;
+	border: 3px solid #811A3F;
+}
+.product2,
+.description2 {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	text-align: center;
+	background-color: azure;
+	backface-visibility: hidden;
+	transition: 1s;
+}
+.description2{
+	box-sizing: border-box;
+	padding: 40px;
+	transform: rotateY(180deg); /* поворот блока с описанием на 180 град, прячем его в начальном состоянии, без наведения курсора мыши */
+}
+.card2:hover .product2 {
+transform: rotateY(180deg); /* разворачиваем блок с изображением на 180 градусов */
+}
+.card2:hover .description2 {
+transform: rotateY(360deg); /* возвращаем блок*/
+}
+.card3{
+	width: 30%;
+	height: 50%;
+	position: relative;
+	border: 3px solid #811A3F;
+}
+.product3,
+.description3 {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	text-align: center;
+	background-color: azure;
+	backface-visibility: hidden;
+	transition: 1s;
+}
+.description3{
+	box-sizing: border-box;
+	padding: 40px;
+	transform: rotateY(180deg); /* поворот блока с описанием на 180 град, прячем его в начальном состоянии, без наведения курсора мыши */
+}
+.card3:hover .product3 {
+transform: rotateY(180deg); /* разворачиваем блок с изображением на 180 градусов */
+}
+.card3:hover .description3 {
+transform: rotateY(360deg); /* возвращаем блок*/
+}
