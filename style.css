@@ -13,20 +13,38 @@ header{
 	display: flex;
     justify-content: center;
 	width: 100%;
+	height: 100%;
     margin: 0;
 	padding: 0;
 	position: absolute;
 }
+
 nav{
 	display: flex;
 	justify-content: space-between;
 	width: 70%;
-	height: 70px;
+	height: 7%;
 	background-color: black;
 }
 .menu-list{
 	display: flex;
 	justify-content: center;
+	width: 100%;
+	position: absolute;
+	align-items: flex-start;
+	margin: 1%;
+}
+@media screen and (min-width: 481px) {
+  .menu-list {
+    font-size: 53px;
+  }
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 480px) {
+  .menu-list {
+    font-size: 28px;
+  }
 }
 .icon{
 	display: flex;
@@ -53,8 +71,14 @@ a:hover{
 .menu-item{
     margin-right: 82px;
 }
-
 main{
+	display: flex;
+	width: 100%;
+	height: 100%;
+	justify-content: flex-start;
+	overflow: hidden;
+}
+.main1{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -99,22 +123,48 @@ blockquote{
 
 
 
-
-
-
-
 .blog{
+	max-width: 100%;
+	max-height: 100%;
+	width: 70%;
 	background-color: #D5FAD4;
 	display: flex;
-	justify-content: space-around;
+	flex-flow: column wrap;
+}
+.main_text{
+	position: absolute;
+	display: flex;
+	flex-flow: column wrap;
+	height: 35%;
+	width: 90%;
+	margin-top: 7%;	
+	margin-bottom: 7%;
+}
+section{
+	display: flex;
+	flex-flow: column wrap;
+	width: 75%;
+	margin-left: 2%;
+	
+}
+
+.main_card{
+	margin-top: 30%;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	display: flex;
 	flex-flow: column wrap;
 	color: black;
 	position: static;
 }
+.main_card:not:last-child{
+	justify-content: space-around;
 
+}
 .card1{
 	width: 30%;
-	height: 50%;
+	height: 100%;
 	position: relative;
 	border: 3px solid #811A3F;
 }
@@ -141,7 +191,7 @@ transform: rotateY(360deg); /* возвращаем блок*/
 }
 .card2{
 	width: 30%;
-	height: 50%;
+	height: 100%;
 	position: relative;
 	border: 3px solid #811A3F;
 }
@@ -168,7 +218,7 @@ transform: rotateY(360deg); /* возвращаем блок*/
 }
 .card3{
 	width: 30%;
-	height: 50%;
+	height: 100%;
 	position: relative;
 	border: 3px solid #811A3F;
 }
