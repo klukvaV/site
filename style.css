@@ -126,10 +126,21 @@ blockquote{
 .blog{
 	max-width: 100%;
 	max-height: 100%;
-	width: 70%;
 	background-color: #D5FAD4;
 	display: flex;
 	flex-flow: column wrap;
+}
+@media screen and (min-width: 481px) {
+  .blog {
+	  	width: 70%;
+  }
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 480px) {
+  .blog {
+	  width: 100%;
+  }
 }
 .main_text{
 	position: absolute;
